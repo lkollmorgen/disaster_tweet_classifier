@@ -24,14 +24,26 @@ def words_in_texts(words, texts):
 def capitals_vs_sentence_len(text):
     """
     Params:
-        text (list): tweet to analyze
+        string (list): tweet to analyze
 
     Returns:
-        The ratio of capital letters to the total number
-        of characters in the string
+        float : The ratio of capital letters to the total number of characters in the string
     """
     uppercases = [letter for letter in text if letter.isupper() and letter.isascii()]
     ratio = float(len(uppercases)/len(text))
     if len(text) == 0:
         return 0.0
     return ratio
+
+def count_periods(text):
+    """
+    Params:
+        text (list): tweet to analyze
+
+    Returns
+        int : the number of periods in the text
+    """
+    return int(len([x for x in text if x == '.']))
+
+
+      
