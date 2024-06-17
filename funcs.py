@@ -45,5 +45,15 @@ def count_periods(text):
     """
     return int(len([x for x in text if x == '.']))
 
+def count_digits(text):
+    """
+    Params:
+        text (list): tweet to analyze
+
+    Returns:
+        int : the number of digits in the text
+    """
+    return int(len([x for x in text if x.isdigit()]))
+
 
       
