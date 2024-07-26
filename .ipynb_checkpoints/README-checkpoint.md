@@ -4,6 +4,10 @@
 - Yielded 0.81% accuracy with BERT pretrained model
 - Removed duplicates from training data
 
+7/25/24
+
+- Added metafeatures. I can now convert them into parts of speech and append them to the text, or something...
+
 6/25/24
 
 - applied BERT pretrained model using Kaggle user [Mexwell's binary NLP classification notebook](https://www.kaggle.com/code/mexwell/bert-for-binary-classification?kernelSessionId=164569436)
@@ -27,7 +31,3 @@
 - Began testing with GridSearchCV
 - Yielded .67 accuracy with LogisticRegression model
 
-  
-## To Do
-- [clean data and add more features for BERT model](https://towardsdatascience.com/part-1-data-cleaning-does-bert-need-clean-data-6a50c9c6e9fd)
-- comment Bert model code and modify for use
